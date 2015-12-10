@@ -6965,8 +6965,8 @@
       mmsport="9201"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
-      mvno_match_data="2C"
-      mvno_type="gid"
+      mvno_type="spn"
+      mvno_match_data="MTS"
   />
 
   <apn carrier="MTS Tethering"
@@ -6976,8 +6976,8 @@
       type="dun"
       protocol="IPV4V6"
       roaming_protocol="IP"
-      mvno_type="gid"
-      mvno_match_data="2C"
+      mvno_type="spn"
+      mvno_match_data="MTS"
   />
 
   <apn carrier="chatr"
@@ -9963,51 +9963,6 @@
       mmsproxy="209.4.229.229"
       mmsport="9201"
       type="mms"
-  />
-
-  <apn carrier="T-Mobile US 580"
-      mcc="310"
-      mnc="580"
-      apn=""
-      type="ia"
-      protocol="IPV6"
-      roaming_protocol="IP"
-      mtu="1440"
-  />
-
-  <apn carrier="T-Mobile US 580"
-      mcc="310"
-      mnc="580"
-      apn="fast.t-mobile.com"
-      mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc"
-      type="default,supl,mms"
-      protocol="IPV6"
-      roaming_protocol="IP"
-      mtu="1440"
-  />
-
-  <apn carrier="T-Mobile US 580 DUN"
-      mcc="310"
-      mnc="580"
-      apn="pcweb.tmobile.com"
-      user="none"
-      server="*"
-      password="none"
-      protocol="IP"
-      type="dun"
-      mtu="1440"
-  />
-
-  <apn carrier="MetroPCS 580"
-      mcc="310"
-      mnc="580"
-      apn="fast.metropcs.com"
-      mmsc="http://metropcs.mmsmvno.com/mms/wapenc"
-      type="default,supl,mms"
-      protocol="IPV6"
-      roaming_protocol="IP"
-      mvno_match_data="6D"
-      mvno_type="gid"
   />
 
   <apn carrier="inland"
@@ -13260,6 +13215,7 @@
       mmsc="http://mms.vtext.com/servlets/mms"
       protocol="IPV4V6"
       bearer_bitmask="4|5|6|7|8|12"
+      user_visible="false"
   />
   <!-- bearer 4, 5, 6, 7, 8, 12 -->
   <apn carrier="Verizon"
@@ -13272,6 +13228,7 @@
       protocol="IPV4V6"
       bearer_bitmask="4|5|6|7|8|12"
       profile_id="1"
+      user_visible="false"
   />
 
   <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15 -->
@@ -13302,6 +13259,7 @@
       modem_cognitive="true"
       max_conns="1023"
       max_conns_time="300"
+      user_visible="false"
   />
 
   <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15 -->
@@ -13317,6 +13275,7 @@
       modem_cognitive="true"
       max_conns="1023"
       max_conns_time="300"
+      user_visible="false"
   />
 
   <!-- bearer 1, 2, 3, 9, 10, 11, 13, 14, 15 -->
@@ -13333,6 +13292,7 @@
       modem_cognitive="true"
       max_conns="1023"
       max_conns_time="300"
+      user_visible="false"
   />
 
   <!-- bearer 1, 2, 3, 9, 10, 11, 15, 16 -->
@@ -24534,33 +24494,7 @@
       protocol="IPV6"
   />
 
-  <apn carrier="SoftBank 3G"
-      mcc="440"
-      mnc="20"
-      apn="plus.softbank"
-      user="plus"
-      password="softbank"
-      mmsproxy="andmms.plusacs.ne.jp"
-      mmsport="8080"
-      mmsc="http://mms-s"
-      type="default,mms,supl,hipri"
-      authtype="2"
-  />
-
-  <apn carrier="SoftBank 4G"
-      mcc="440"
-      mnc="20"
-      apn="plus.4g"
-      user="plus"
-      password="4g"
-      mmsproxy="andmms.plusacs.ne.jp"
-      mmsport="8080"
-      mmsc="http://mms-s"
-      type="default,mms,supl,hipri"
-      authtype="2"
-  />
-
-  <apn carrier="Y! mobile"
+  <apn carrier="Application"
       mcc="440"
       mnc="20"
       apn="plus.acs.jp"
